@@ -19,16 +19,19 @@ function App() {
         <h1>Userlist</h1>
 
         <div className="top">
-          <input
-            type="text"
-            placeholder="Add Username"
+          <form>
+            <input
+              type="text"
+              placeholder="Add Username"
 
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            required
-          ></input>
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              required
+            ></input>
 
-          <div className="add" onClick={() => addToDo(text, setText, setToDo)}>Add</div>
+            <button type="submit" className="add" onClick={() => addToDo(text, setText, setToDo)}>Add</button>
+          </form>
+
         </div>
 
         <div className="list">

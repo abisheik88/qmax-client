@@ -22,8 +22,10 @@ function App() {
           <input
             type="text"
             placeholder="Add Username"
+
             value={text}
             onChange={(e) => setText(e.target.value)}
+            required
           ></input>
 
           <div className="add" onClick={() => addToDo(text, setText, setToDo)}>Add</div>
